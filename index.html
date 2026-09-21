@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="Boot/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-card"data-aos="fade-up"data-aos-duration="1000">
+            <h1 class="animate__animated animate__fadeInDown">
+                BMI Calculator
+            </h1>
+
+            <p class="subtitle animate__animated animate__fadeIn">
+                محاسبه شاخص توده بدنی
+            </p>
+
+            <div class="mb-3"data-aos="fade-right"data-aos-delay="200">
+
+                <label for="height" class="form-label">
+                    قد (سانتی‌متر)
+                </label>
+
+                <input type="number"id="height"class="form-control"placeholder="مثلاً 160">
+
+                <p id="height-result"></p>
+
+            </div>
+
+            <div class="mb-3"data-aos="fade-left"data-aos-delay="300">
+
+                <label for="weight" class="form-label">
+                    وزن (کیلوگرم)
+                </label>
+
+                <input type="number"id="weight"class="form-control"placeholder="مثلاً 50">
+                <p id="weight-result"></p>
+            </div>
+
+            <button id="calculate-btn"class="btn btn-primary w-100">
+                محاسبه BMI
+            </button>
+
+            <div class="result-box"data-aos="zoom-in"data-aos-duration="800">
+
+                <h4>نتیجه</h4>
+
+                <p>
+                    BMI شما:
+                    <span id="bmi-value">---</span>
+                </p>
+
+                <p>
+                    وضعیت:
+                    <span id="bmi-status">---</span>
+                </p>
+
+                <p id="bmi-message"></p>
+
+                <img id="result-img"src=""alt="BMI Result">
+
+                <div class="bmi-scale">
+
+                    <div class="scale-item low">
+                        <span></span>
+                        <p>کم‌وزنی</p>
+                    </div>
+
+                    <div class="scale-item normal">
+                        <span></span>
+                        <p>نرمال</p>
+                    </div>
+
+                    <div class="scale-item over">
+                        <span></span>
+                        <p>اضافه‌وزن</p>
+                    </div>
+
+                    <div class="scale-item obese">
+                        <span></span>
+                        <p>چاقی</p>
+                    </div>
+
+                    <div class="scale-item severe">
+                        <span></span>
+                        <p>چاقی شدید</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
