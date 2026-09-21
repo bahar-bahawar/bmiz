@@ -76,7 +76,7 @@ calculateBtn.addEventListener("click", function () {
         status +
         " است."
 
-    resultImg.src = "img/" + imgName
+    resultImg.src =  imgName
     resultImg.style.display = "block"
 
     Swal.fire({
